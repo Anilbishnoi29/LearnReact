@@ -14,4 +14,13 @@ code {
 
 .app {
   text-align: center;
+  max-width: 1170px;
+  margin: auto;
+}
+
+.wrapper {
+  border: 1px solid rgb(82, 82, 82);
+  border-radius: 20px;
+  padding: 1rem;
+  margin: 1rem;
 }
