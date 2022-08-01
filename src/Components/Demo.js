@@ -1,20 +1,26 @@
 import React,{ Component,useState } from "react";
-
-// functional component
-function Demo() {
-    const [data,setData] = useState("Anil");
+import { PropTypes } from "prop-types";
+function Demo(props) {
+    const [data,setData] = useState(props.dataName);
     function updateData() {
-        setData("Anil Bishnoi");
-        alert(data);
+        const newData = data.toUpperCase();
+        setData(newData);
     }
     console.warn("-----------------");
     return (
         <>
+            <h1>{ props.title }</h1>
             <h1>{ data }</h1>
             <button onClick={ updateData }>Update Data</button>
         </>
     );
-}
-
+};
+Demo.propTypes = {
+    title: PropTypes.string,
+};
+Demo.defaultProps = {
+    title: "set title here ",
+    dataName: "Set name here",
+};
 
 export default Demo;
