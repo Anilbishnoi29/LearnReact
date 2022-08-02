@@ -1,6 +1,6 @@
 import React,{ Component } from 'react';
 
-// function Welcome(props) {
+// function Welcome(props) { 
 const Welcome = ({ name }) => {
     return (
         <div className='wrapper'>

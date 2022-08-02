@@ -4,6 +4,7 @@ import Demo from './Components/Demo';
 import Profile from './Components/Profile';
 import List from './Components/List';
 import Welcome,{ WelcomeClass } from './Components/Welcome';
+import StateCounter from './Components/state';
 
 function App() {
   let titleHereA = "Hello ";
@@ -18,6 +19,7 @@ function App() {
       {/* <List title="BMW" heading="BMW-1" subHeading="BMW-1.1" content="BMW......" /> */ }
       <Welcome name="Anil Bishnoi" />
       <WelcomeClass name="Anil Bishnoi" />
+      <StateCounter />
     </div>
   );
 }
